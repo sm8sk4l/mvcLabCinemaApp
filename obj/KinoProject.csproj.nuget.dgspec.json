@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sebastianmoskal/Desktop/KinoProject/KinoProject.csproj": {}
+    "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj": {}
   },
   "projects": {
-    "/Users/sebastianmoskal/Desktop/KinoProject/KinoProject.csproj": {
+    "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sebastianmoskal/Desktop/KinoProject/KinoProject.csproj",
+        "projectUniqueName": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj",
         "projectName": "KinoProject",
-        "projectPath": "/Users/sebastianmoskal/Desktop/KinoProject/KinoProject.csproj",
+        "projectPath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj",
         "packagesPath": "/Users/sebastianmoskal/.nuget/packages/",
-        "outputPath": "/Users/sebastianmoskal/Desktop/KinoProject/obj/",
+        "outputPath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sebastianmoskal/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,26 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.115.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

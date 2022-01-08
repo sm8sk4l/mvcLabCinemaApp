@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace KinoProject.Models;
 
- public class UserModel
+ public class User
   {
     
     [Key]
@@ -12,5 +12,7 @@ namespace KinoProject.Models;
     public string Mail { get; set; }
     [DataType(DataType.Password)]
     public string Password { get; set; }
+
+    public ICollection<Ticket> Tickets { get; set; }
     
   }

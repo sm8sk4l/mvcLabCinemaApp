@@ -4,21 +4,24 @@ namespace KinoProject.Models;
 
 public class Hall
 {
-  [Key]
-  public int Id { get; set; }
-  string? User {get; set;}
-  
-  State State;
+    [Key]
+    public int Id { get; set; }
 
-  int AmountOfBusySeat {get; set;}
-  int MaxCapacity {get; set;}
+    public State State;
 
-  int Nr {get; set;}
+    public int AmountOfBusySeat { get; set; }
+    public int MaxCapacity { get; set; }
+
+    public int Nr { get; set; }
+   
+    public User User { get; set; }
+
+    public Movie Movie { get; set; }
 
 }
- enum State
- {
-     playing,
-     free,
+public enum State
+{
+    playing,
+    free,
 
- }
+}

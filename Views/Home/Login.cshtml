@@ -1,0 +1,16 @@
+@model KinoProject.Models.User
+@{
+    ViewData["Title"] = "LogIn Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    @Html.TextBox("name")
+    @Html.ValidationMessageFor(model => model.Name)
+    
+    @Html.TextBox("pass")
+    @Html.ValidationMessageFor(model => model.Password)
+
+    <button type="submit">Subscribe</button>
+}

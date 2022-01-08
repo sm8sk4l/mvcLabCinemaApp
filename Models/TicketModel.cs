@@ -1,21 +1,20 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace KinoProject.Models;
-
-public class Ticket
+    public class Ticket
 {
 
-  [Key]
-  public int Id { get; set; }  
-  string? User {get; set;}
-  
-  string? Movie {get; set;}
+    [Key]
+    public int Id { get; set; }
 
-  string TimeStamp {get; set;}
+    public string TimeStamp { get; set; }
 
-  string Row {get; set;}
+    public string Row { get; set; }
 
-  int Seating {get; set;}
+    public int Seating { get; set; }
 
+    public Movie Movie {get; set;}
+
+   public User User {get;set;}
 
 }

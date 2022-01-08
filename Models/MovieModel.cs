@@ -12,4 +12,9 @@ public class Movie
 
     string Category { get; set; }
 
+    public ICollection<Ticket> Tickets { get; set; }
+
+    public ICollection<Hall> Halls { get; set; }
+
+
 }
