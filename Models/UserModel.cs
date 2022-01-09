@@ -2,9 +2,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace KinoProject.Models;
 
- public class User
-  {
-    
+public class User
+{
+
     [Key]
     public int Id { get; set; }
     public string Name { get; set; }
@@ -14,5 +14,5 @@ namespace KinoProject.Models;
     public string Password { get; set; }
 
     public ICollection<Ticket> Tickets { get; set; }
-    
-  }
+
+}

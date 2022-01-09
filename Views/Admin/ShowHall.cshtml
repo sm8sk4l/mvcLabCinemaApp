@@ -1,0 +1,21 @@
+@model KinoProject.Models.Cinema
+
+@foreach (var hall in @Model.Halls)
+{
+    <h5>Hall nr</h5><br>
+    <p>@hall.Nr</p><br>
+
+    <h5>Hall state</h5><br>
+    <p>@hall.State</p><br>
+
+    <h5>Hall max capacity</h5><br>
+    <p>@hall.MaxCapacity</p><br>
+
+    <h5>Hall amount of busy seat</h5><br>
+    <p>@hall.AmountOfBusySeat</p><br>
+
+    <h5>Hall movie</h5><br>
+    <p>@hall.Movie</p><br>
+    
+
+}

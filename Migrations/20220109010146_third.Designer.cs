@@ -10,13 +10,24 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KinoProject.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220108213050_first")]
-    partial class first
+    [Migration("20220109010146_third")]
+    partial class third
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.1");
+
+            modelBuilder.Entity("KinoProject.Models.Cinema", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cinemas");
+                });
 
             modelBuilder.Entity("KinoProject.Models.Hall", b =>
                 {
@@ -25,6 +36,9 @@ namespace KinoProject.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("AmountOfBusySeat")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CinemaId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("MaxCapacity")
@@ -40,6 +54,8 @@ namespace KinoProject.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CinemaId");
 
                     b.HasIndex("MovieId");
 
@@ -116,6 +132,12 @@ namespace KinoProject.Migrations
 
             modelBuilder.Entity("KinoProject.Models.Hall", b =>
                 {
+                    b.HasOne("KinoProject.Models.Cinema", "Cinema")
+                        .WithMany("Halls")
+                        .HasForeignKey("CinemaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("KinoProject.Models.Movie", "Movie")
                         .WithMany("Halls")
                         .HasForeignKey("MovieId")
@@ -127,6 +149,8 @@ namespace KinoProject.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Cinema");
 
                     b.Navigation("Movie");
 
@@ -150,6 +174,11 @@ namespace KinoProject.Migrations
                     b.Navigation("Movie");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("KinoProject.Models.Cinema", b =>
+                {
+                    b.Navigation("Halls");
                 });
 
             modelBuilder.Entity("KinoProject.Models.Movie", b =>

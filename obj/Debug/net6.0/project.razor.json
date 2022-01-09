@@ -16298,6 +16298,11 @@
   "RootNamespace": "KinoProject",
   "Documents": [
     {
+      "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Admin/AddHall.cshtml",
+      "TargetPath": "Views\\Admin\\AddHall.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -16305,6 +16310,11 @@
     {
       "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Home/Register.cshtml",
       "TargetPath": "Views\\Home\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Admin/ShowHall.cshtml",
+      "TargetPath": "Views\\Admin\\ShowHall.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16323,8 +16333,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Admin/Privacy.cshtml",
+      "TargetPath": "Views\\Admin\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/User/Privacy.cshtml",
+      "TargetPath": "Views\\User\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16335,6 +16355,11 @@
     {
       "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Home/Login.cshtml",
       "TargetPath": "Views\\Home\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Admin/Index.cshtml",
+      "TargetPath": "Views\\Admin\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

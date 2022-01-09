@@ -28,6 +28,9 @@ public class DataContext : DbContext
         .HasMany(m => m.Halls)
         .WithOne(h => h.Movie);
 
+         modelBuilder.Entity<Cinema>()
+        .HasMany(m => m.Halls)
+        .WithOne(h => h.Cinema);
 
         
 
@@ -36,6 +39,7 @@ public class DataContext : DbContext
     public DbSet<Movie> Movies { get; set; }
     public DbSet<Hall> Halls { get; set; }
     public DbSet<Ticket> Tickets { get; set; }
+    public DbSet<Cinema> Cinemas { get; set; }
 
 
 }

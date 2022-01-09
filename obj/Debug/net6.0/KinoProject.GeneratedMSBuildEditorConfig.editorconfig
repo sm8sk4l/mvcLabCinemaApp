@@ -15,6 +15,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/sebastianmoskal/Desktop/mvcLabCinemaApp
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Admin/AddHall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRkSGFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Admin/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Admin/ShowHall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vU2hvd0hhbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -41,6 +57,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/User/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/Views/_ViewImports.cshtml]

@@ -4,6 +4,7 @@ namespace KinoProject.Models;
 
 public class Hall
 {
+   
     [Key]
     public int Id { get; set; }
 
@@ -13,15 +14,18 @@ public class Hall
     public int MaxCapacity { get; set; }
 
     public int Nr { get; set; }
-   
+
     public User User { get; set; }
 
     public Movie Movie { get; set; }
 
+    public Cinema Cinema { get; set; }
+
 }
+
 public enum State
 {
-    playing,
     free,
+    playing
 
 }

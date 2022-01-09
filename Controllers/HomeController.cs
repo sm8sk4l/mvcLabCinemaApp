@@ -31,30 +31,47 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Login(string name, string pass)
     {
-        ClaimsIdentity identity = null;
+        string adminPass = "admin";
+        string adminName = "admin";
         bool isAuth = false;
         bool userExist = false;
-        using (DataContext context = new DataContext())
-        {
-            userExist = context.Users.Any(user => (user.Name == name ||
-                                                        user.Password == pass));
-        }
-        if (userExist)
+        ClaimsIdentity identity = null;
+
+        if (name == adminName && pass == adminPass)
         {
             identity = new ClaimsIdentity(new[]{
                     new Claim(ClaimTypes.Name,name),
+                    new Claim(ClaimTypes.Role,"Admin"),
+                }, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
+                var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+                return RedirectToAction("Index", "Admin");
+        }
+        else
+        {
+            using (DataContext context = new DataContext())
+            {
+                userExist = context.Users.Any(user => (user.Name == name ||
+                                                       user.Password == pass));
+
+            }
+            if (userExist)
+            {
+                identity = new ClaimsIdentity(new[]{
+                    new Claim(ClaimTypes.Name,name),
                     new Claim(ClaimTypes.Role,"User"),
                 }, CookieAuthenticationDefaults.AuthenticationScheme);
-            isAuth = true;
-        }
-        if (isAuth)
-        {
-            var principal = new ClaimsPrincipal(identity);
-            var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-            return RedirectToAction("Index", "User");
-        }
-        return View();
+                isAuth = true;
+            }
+            if (isAuth)
+            {
+                var principal = new ClaimsPrincipal(identity);
+                var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+                return RedirectToAction("Index", "User");
+            }
+            return View();
 
+        }
     }
 
     public async Task<IActionResult> LogOutAsync()
