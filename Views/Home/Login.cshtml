@@ -1,16 +1,18 @@
 @model KinoProject.Models.User
-@{
-    ViewData["Title"] = "LogIn Page";
-}
-<h1>@ViewData["Title"]</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link href="~/css/logStyle.css" rel="stylesheet" type="text/css" />
+    </head>
 
-@using (Html.BeginForm("Login", "Home", FormMethod.Post))
-{
-    @Html.TextBox("name")
-    @Html.ValidationMessageFor(model => model.Name)
-    
-    @Html.TextBox("pass")
-    @Html.ValidationMessageFor(model => model.Password)
-
-    <button type="submit">Subscribe</button>
-}
+<div class="login-page">
+    <div class="form" >
+        <form class="login-form" method="POST">
+            <input type="text" name="name" id="name" placeholder="username" />
+            <input type="password" name="pass" id="pass" placeholder="password" />
+            <button>login</button>
+            <p class="message">Not registered? <a href="@Url.Action("Register","Home")">Create an account</a></p>
+        </form>
+    </div>
+</div>

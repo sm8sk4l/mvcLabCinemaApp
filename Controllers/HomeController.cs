@@ -51,8 +51,7 @@ public class HomeController : Controller
         {
             using (DataContext context = new DataContext())
             {
-                userExist = context.Users.Any(user => (user.Name == name ||
-                                                       user.Password == pass));
+                userExist = context.Users.Any(user => (user.Name == name && user.Password == pass));
 
             }
             if (userExist)

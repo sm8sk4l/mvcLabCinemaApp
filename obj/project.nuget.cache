@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZSFryL38NG7Ncjme+FDX++R5LXX+RlEof1AZvXZeUIKuzq1mLA6QbDPrPpUS+4cal3FwedQujr5gM909Hgv7og==",
+  "dgSpecHash": "GxW42jAiaCvX2DwNmCBoHjOSokBeT+b9akdKu0sJ0j8x86XjoHRUqDRPtEtstqHXVV/6ZQal/0CDaJ/L90Tkag==",
   "success": true,
-  "projectFilePath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj",
+  "projectFilePath": "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/KinoProject.csproj",
   "expectedPackageFiles": [
     "/Users/sebastianmoskal/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/Users/sebastianmoskal/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",

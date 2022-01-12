@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj": {}
+    "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/KinoProject.csproj": {}
   },
   "projects": {
-    "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj": {
+    "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/KinoProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj",
+        "projectUniqueName": "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/KinoProject.csproj",
         "projectName": "KinoProject",
-        "projectPath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/KinoProject.csproj",
+        "projectPath": "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/KinoProject.csproj",
         "packagesPath": "/Users/sebastianmoskal/.nuget/packages/",
-        "outputPath": "/Users/sebastianmoskal/Desktop/mvcLabCinemaApp/obj/",
+        "outputPath": "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sebastianmoskal/.nuget/NuGet/NuGet.Config"
