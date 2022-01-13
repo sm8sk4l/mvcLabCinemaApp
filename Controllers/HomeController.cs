@@ -43,9 +43,9 @@ public class HomeController : Controller
                     new Claim(ClaimTypes.Name,name),
                     new Claim(ClaimTypes.Role,"Admin"),
                 }, CookieAuthenticationDefaults.AuthenticationScheme);
-                var principal = new ClaimsPrincipal(identity);
-                var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-                return RedirectToAction("Index", "Admin");
+            var principal = new ClaimsPrincipal(identity);
+            var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+            return RedirectToAction("Index", "Admin");
         }
         else
         {
