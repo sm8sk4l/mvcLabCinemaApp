@@ -25,7 +25,7 @@ public class Hall
 
 public enum State
 {
-    free,
+    free = 1,
     playing
 
 }

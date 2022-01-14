@@ -12,11 +12,14 @@ namespace KinoProject.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    private readonly DataContext _contex;
+
+    private readonly ILogger<HomeController> _logger;
+    public HomeController(ILogger<HomeController> logger, DataContext context)
     {
         _logger = logger;
+        _contex = context;
     }
 
     public IActionResult Index()
