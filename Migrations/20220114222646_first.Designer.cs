@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KinoProject.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220113182427_First")]
-    partial class First
+    [Migration("20220114222646_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

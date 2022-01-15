@@ -23,8 +23,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<DataInitializer>();
 // database
-DatabaseFacade facade = new DatabaseFacade(new DataContext());
-facade.EnsureCreated();
+
 builder.Services.AddEntityFrameworkSqlite().AddDbContext<DataContext>();
 
 // auth
@@ -59,5 +58,6 @@ app.UseEndpoints(endpoints =>
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
 });
+DataInitializer.Seed(app);
 
 app.Run();

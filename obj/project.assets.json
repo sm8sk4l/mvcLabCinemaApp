@@ -2303,11 +2303,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/KinoProject.csproj",
+      "projectUniqueName": "/Users/sebastianmoskal/mvcLabCinemaApp/KinoProject.csproj",
       "projectName": "KinoProject",
-      "projectPath": "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/KinoProject.csproj",
+      "projectPath": "/Users/sebastianmoskal/mvcLabCinemaApp/KinoProject.csproj",
       "packagesPath": "/Users/sebastianmoskal/.nuget/packages/",
-      "outputPath": "/Users/sebastianmoskal/Documents/GitHub/mvcLabCinemaApp/obj/",
+      "outputPath": "/Users/sebastianmoskal/mvcLabCinemaApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sebastianmoskal/.nuget/NuGet/NuGet.Config"

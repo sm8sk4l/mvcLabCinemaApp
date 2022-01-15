@@ -24,7 +24,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        var data = _contex.Movies.ToList();
+        return View(data);
     }
 
     public IActionResult Login()

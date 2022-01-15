@@ -12,7 +12,7 @@ public class DataContext : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source = ProjectDatabase.db");
+        optionsBuilder.UseSqlite("Data Source = CinemaDatabase.db");
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
