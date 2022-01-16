@@ -7,6 +7,7 @@ using KinoProject.Data;
 using Microsoft.Extensions.Logging;
 using System;
 using KinoProject.Models;
+using System.Data.Entity;
 
 namespace KinoProject.Controllers;
 
@@ -14,7 +15,6 @@ public class HomeController : Controller
 {
 
     private readonly DataContext _contex;
-
     private readonly ILogger<HomeController> _logger;
     public HomeController(ILogger<HomeController> logger, DataContext context)
     {
@@ -24,7 +24,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var data = _contex.Movies.ToList();
+        var data =  _contex.Movies.ToList();
         return View(data);
     }
 

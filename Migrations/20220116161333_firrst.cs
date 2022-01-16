@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace KinoProject.Migrations
 {
-    public partial class first : Migration
+    public partial class firrst : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
