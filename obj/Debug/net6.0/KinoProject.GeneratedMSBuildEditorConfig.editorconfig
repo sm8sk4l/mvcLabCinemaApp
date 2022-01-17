@@ -15,8 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/sebastianmoskal/mvcLabCinemaApp
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/sebastianmoskal/mvcLabCinemaApp/Views/Admin/AddHall.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRkSGFsbC5jc2h0bWw=
+[/Users/sebastianmoskal/mvcLabCinemaApp/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/sebastianmoskal/mvcLabCinemaApp/Views/Admin/Index.cshtml]

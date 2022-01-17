@@ -27,34 +27,9 @@ public class AdminController : Controller
         return View(data);
     }
 
-    public IActionResult AddHall()
+    public IActionResult Create()
     {
         return View();
-    }
-    [HttpPost]
-    public IActionResult AddHall(int maxCapacity, int nr)
-    {
-        using (DataContext context = new DataContext())
-        {
-            context.Halls.Add(new Hall()
-            {
-                MaxCapacity = maxCapacity,
-                AmountOfBusySeat = 0,
-                Nr = nr,
-            });
-            context.SaveChanges();
-        }
-        return View();
-    }
-
-    public IActionResult ShowHalls()
-    {
-        IAsyncEnumerator<KinoProject.Models.Cinema> cinema;
-        using (DataContext context = new DataContext())
-        {
-            cinema = context.Cinemas.GetAsyncEnumerator();
-        }
-        return View(cinema);
     }
 
     public IActionResult Privacy()

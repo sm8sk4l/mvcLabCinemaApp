@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Add a new Movie";
+}
+<head>
+    <link href="~/css/logStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<div class="text">
+    <h1 style="text-align:center;">Add Movie Page</h1>
+</div>
+<div class="row">
+    <div class="form" >
+        <form class="login-form" method="POST">
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="text" name="price" id="price" placeholder="Price" />
+            <input type="text" name="description" id="description" placeholder="Description" />
+            <input type="text" name="imageurl" id="imageurl" placeholder="Cover URL" />
+            <input type="date" name="startdate" id="startdate" placeholder="Start" />
+            <input type="date" name="enddate" id="enddate" placeholder="End" />
+            <button>Add</button>
+        </form>
+    </div>
+</div>

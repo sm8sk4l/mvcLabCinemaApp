@@ -16308,11 +16308,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/sebastianmoskal/mvcLabCinemaApp/Views/Admin/AddHall.cshtml",
-      "TargetPath": "Views\\Admin\\AddHall.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/sebastianmoskal/mvcLabCinemaApp/Views/User/Privacy.cshtml",
       "TargetPath": "Views\\User\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -16325,6 +16320,11 @@
     {
       "FilePath": "/Users/sebastianmoskal/mvcLabCinemaApp/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sebastianmoskal/mvcLabCinemaApp/Views/Admin/Create.cshtml",
+      "TargetPath": "Views\\Admin\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
