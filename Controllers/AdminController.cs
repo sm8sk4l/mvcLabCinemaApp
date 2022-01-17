@@ -14,15 +14,17 @@ namespace KinoProject.Controllers;
 public class AdminController : Controller
 {
     private readonly ILogger<AdminController> _logger;
-
-    public AdminController(ILogger<AdminController> logger)
+    private readonly DataContext _context;
+    public AdminController(ILogger<AdminController> logger, DataContext context)
     {
         _logger = logger;
+        _context = context;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var data =  _context.Movies.ToList();
+        return View(data);
     }
 
     public IActionResult AddHall()

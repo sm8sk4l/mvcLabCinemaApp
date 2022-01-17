@@ -12,7 +12,10 @@ public class Movie
     public double Price { get; set; }
     public string Description { get; set; }
     public string ImageURL { get; set;}
+    [DataType(DataType.Date)]
     public DateTime StartDate { get; set;}
+    [DataType(DataType.Date)]
+
     public DateTime EndDate { get ; set;}
     public MovieCategory MovieCategory { get; set; }
     public ICollection<Ticket> Tickets { get; set; }

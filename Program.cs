@@ -16,12 +16,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.DataProtection;
 using KinoProject.Data;
 using KinoProject.Models;
+using KinoProject.Data.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<DataInitializer>();
+builder.Services.AddScoped<IMoviesService, MoviesService>();
 // database
 
 builder.Services.AddEntityFrameworkSqlite().AddDbContext<DataContext>();
