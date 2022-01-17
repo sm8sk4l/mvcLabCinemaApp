@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using KinoProject.Models;
+using KinoProject.Data;
 
 namespace KinoProject.Data.Services;
 
@@ -12,7 +13,8 @@ public class MoviesService : IMoviesService
     }
     public void Add(Movie movie)
     {
-        throw new NotImplementedException();
+        _context.Movies.Add(movie);
+        _context.SaveChangesAsync();
     }
 
     public void Delete(int id)

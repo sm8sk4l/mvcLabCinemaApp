@@ -5,8 +5,9 @@
 @{
     ViewData["Title"] = "Admin Page";
 }
-
-<h1>@ViewData["Title"]</h1>
+<div class="text">
+    <h1 style="text-align:center;">Admin Panel Page</h1>
+</div>
 
 <div class="row">
     <div class="col-md8 offset-md-2">
@@ -17,6 +18,7 @@
                     <th>@Html.DisplayNameFor(model => model.ImageURL)</th>
                     <th>@Html.DisplayNameFor(model => model.Name)</th>
                     <th>@Html.DisplayNameFor(model => model.Price)</th>
+                    <th>@Html.DisplayNameFor(model => model.MovieCategory)</th>
                     <th>@Html.DisplayNameFor(model => model.StartDate)</th>
                     <th>@Html.DisplayNameFor(model => model.EndDate)</th>
                 </tr>
@@ -35,6 +37,9 @@
                             @Html.DisplayFor(modelItem => item.Price)
                         </td>
                         <td class="align-middle">
+                            @Html.DisplayFor(model => item.MovieCategory)
+                        </td>
+                        <td class="align-middle">
                             @Html.DisplayFor(modelItem => item.StartDate)
                         </td>
                         <td class="align-middle">
@@ -50,4 +55,9 @@
             </tbody>
         </table>
     </div>
+</div>
+
+<div style="position: fixed; right: 25px; bottom: 25px;" class="text-white">
+    <a asp-controller="Admin" asp-action="Create" class="btn btn-success"> 
+    <i class="bi bi-plus-circle"> Add New</i></a>
 </div>

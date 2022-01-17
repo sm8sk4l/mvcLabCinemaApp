@@ -8,22 +8,23 @@ using KinoProject.Data;
 using Microsoft.Extensions.Logging;
 using System;
 using KinoProject.Models;
+using KinoProject.Data.Services;
 
 namespace KinoProject.Controllers;
 [Authorize(Roles = "Admin")]
 public class AdminController : Controller
 {
     private readonly ILogger<AdminController> _logger;
-    private readonly DataContext _context;
-    public AdminController(ILogger<AdminController> logger, DataContext context)
+    private readonly IMoviesService _service ;
+    public AdminController(ILogger<AdminController> logger, IMoviesService service)
     {
         _logger = logger;
-        _context = context;
+        _service = service;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        var data =  _context.Movies.ToList();
+        var data =  await _service.GetAll();
         return View(data);
     }
 
@@ -32,6 +33,17 @@ public class AdminController : Controller
         return View();
     }
 
+    [HttpPost] 
+    public async Task<IActionResult> Create([Bind("Name","Price","Description","ImageURL","StartDate","EndDate","MovieCategory")] Movie movie)
+    {
+        if(!ModelState.IsValid)
+        {
+            return View(movie);
+        }
+        _service.Add(movie);
+        return RedirectToAction(nameof(Index));
+
+    }
     public IActionResult Privacy()
     {
         return View();
