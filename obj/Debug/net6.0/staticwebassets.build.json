@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MeiO6E61k4eAK+Y2yQsBO3XaeknA0jStT0BQpI7JGKg=",
+  "Hash": "Y1gwETygSxxzTmRowR5RYLEdEQC8dLY5G6xb4+VYufs=",
   "Source": "KinoProject",
   "BasePath": "_content/KinoProject",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/sebastianmoskal/mvcLabCinemaApp/obj/Debug/net6.0/scopedcss/projectbundle/KinoProject.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/sebastianmoskal/mvcLabCinemaApp/wwwroot/css/adminStyle.css",
+      "SourceId": "KinoProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/sebastianmoskal/mvcLabCinemaApp/wwwroot/",
+      "BasePath": "_content/KinoProject",
+      "RelativePath": "css/adminStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/adminStyle.css"
     },
     {
       "Identity": "/Users/sebastianmoskal/mvcLabCinemaApp/wwwroot/css/logStyle.css",

@@ -11,9 +11,13 @@ public class Movie
     public string Name { get; set; }
     public double Price { get; set; }
     public string Description { get; set; }
+    [Display(Name = "Cover")]
     public string ImageURL { get; set;}
+    [Display(Name = "Start")]
+
     [DataType(DataType.Date)]
     public DateTime StartDate { get; set;}
+    [Display(Name = "End")]
     [DataType(DataType.Date)]
 
     public DateTime EndDate { get ; set;}
