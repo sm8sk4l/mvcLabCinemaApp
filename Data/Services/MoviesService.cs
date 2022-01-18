@@ -14,7 +14,7 @@ public class MoviesService : IMoviesService
     public void Add(Movie movie)
     {
         _context.Movies.Add(movie);
-        _context.SaveChangesAsync();
+        _context.SaveChanges();
     }
 
     public void Delete(int id)
@@ -22,7 +22,7 @@ public class MoviesService : IMoviesService
         throw new NotImplementedException();
     }
 
-    public async Task<IEnumerable<Movie>> GetAll()
+    public async Task<IEnumerable<Movie>> GetAllAsync()
     {
         var result = await _context.Movies.ToListAsync();
         return result;
@@ -30,11 +30,14 @@ public class MoviesService : IMoviesService
 
     public Movie GetById(int id)
     {
-        throw new NotImplementedException();
-    }
+        var result = _context.Movies.FirstOrDefault(n => n.Id == id);
+        return result;
+    } 
 
     public Movie Update(int id, Movie newMovie)
     {
-        throw new NotImplementedException();
+        _context.Update(newMovie);
+        _context.SaveChanges();
+        return newMovie;
     }
 }

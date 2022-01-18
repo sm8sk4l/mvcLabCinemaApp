@@ -39,9 +39,6 @@
                     <div class="col-md-12">
                         <div class="card-footer ">
                             <p class="card-text">
-                                <a class="btn btn-outline-primary float-right">
-                                    <i class="bi bi-eye-fill"></i> Show Details
-                                </a>
                                 <a class="btn btn-success text-white @((DateTime.Now > item.EndDate) ? "disabled" : "")" 
                                    asp-controller="Orders" 
                                    asp-action="AddItemToShoppingCart" 
