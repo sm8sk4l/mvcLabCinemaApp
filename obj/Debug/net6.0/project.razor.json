@@ -16358,8 +16358,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/sebastianmoskal/mvcLabCinemaApp/Views/User/AfterBuyNow.cshtml",
+      "TargetPath": "Views\\User\\AfterBuyNow.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/sebastianmoskal/mvcLabCinemaApp/Views/Admin/ShowHall.cshtml",
       "TargetPath": "Views\\Admin\\ShowHall.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sebastianmoskal/mvcLabCinemaApp/Views/Home/AfterRegister.cshtml",
+      "TargetPath": "Views\\Home\\AfterRegister.cshtml",
       "FileKind": "mvc"
     },
     {

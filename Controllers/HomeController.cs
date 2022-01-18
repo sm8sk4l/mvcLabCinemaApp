@@ -103,7 +103,7 @@ public class HomeController : Controller
                 });
                 context.SaveChanges();
             }
-            return RedirectToAction("Login", "Home");
+            return View("AfterRegister");
         }
         else
         {

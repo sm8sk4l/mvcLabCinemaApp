@@ -20,6 +20,10 @@ public class UserController : Controller
         _logger = logger;
     }
 
+    public IActionResult AfterBuyNow()
+    {
+        return View("AfterBuyNow");
+    }
     public IActionResult Index()
     {
         return View();
