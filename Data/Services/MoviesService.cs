@@ -40,4 +40,21 @@ public class MoviesService : IMoviesService
         _context.SaveChanges();
         return newMovie;
     }
+
+    public static bool ValidateMovie(Movie movie)
+    {
+        if (movie.Name == "" || movie.Name == null)
+            return false;
+
+        if(movie.Price < 0)
+            return false;
+
+        if (movie.Description == "" || movie.Description == null)
+            return false;
+
+        if (movie.ImageURL == "" || movie.ImageURL == null)
+            return false;
+
+        return true;
+    }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sebastianmoskal/mvcLabCinemaApp/KinoProject.csproj": {}
+    "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/KinoProject.csproj": {}
   },
   "projects": {
-    "/Users/sebastianmoskal/mvcLabCinemaApp/KinoProject.csproj": {
+    "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/KinoProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sebastianmoskal/mvcLabCinemaApp/KinoProject.csproj",
+        "projectUniqueName": "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/KinoProject.csproj",
         "projectName": "KinoProject",
-        "projectPath": "/Users/sebastianmoskal/mvcLabCinemaApp/KinoProject.csproj",
+        "projectPath": "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/KinoProject.csproj",
         "packagesPath": "/Users/sebastianmoskal/.nuget/packages/",
-        "outputPath": "/Users/sebastianmoskal/mvcLabCinemaApp/obj/",
+        "outputPath": "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sebastianmoskal/.nuget/NuGet/NuGet.Config"
@@ -52,9 +52,23 @@
               "target": "Package",
               "version": "[6.0.1, )"
             },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.0.0, )"
+            },
             "System.Data.SQLite": {
               "target": "Package",
               "version": "[1.0.115.5, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
