@@ -24,8 +24,8 @@ namespace KinoProjectTests
                 },
                 new object[] {
                     new Movie {
-                        Name = "Wied�min",
-                        Description = "Film fantasy o go�ciu z mieczem",
+                        Name = "Wiedzmin",
+                        Description = "Film fantasy o gosciu z mieczem",
                         StartDate = DateTime.Now + TimeSpan.FromDays(5),
                         EndDate = DateTime.Now + TimeSpan.FromDays(6),
                         Price = 120,
@@ -36,8 +36,8 @@ namespace KinoProjectTests
                 },
                 new object[] {
                     new Movie {
-                        Name = "Jezus nie by� bia�y",
-                        Description = "Dokument o wszystkim znanym synu bo�ym.",
+                        Name = "Jezus nie byl bialy",
+                        Description = "Dokument o wszystkim znanym synu bozym.",
                         StartDate = DateTime.Now + TimeSpan.FromDays(1),
                         EndDate = DateTime.Now + TimeSpan.FromDays(2),
                         Price = 50,
@@ -52,8 +52,8 @@ namespace KinoProjectTests
         {
                 new object[] {
                     new Movie {
-                        Name = "Kie�basa Wiejska",
-                        Description = "Dobra kie�basa",
+                        Name = "Kielbasa Wiejska",
+                        Description = "Dobra kielbasa",
                         Price = -5,
                         ImageURL = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/1200px-Felis_catus-cat_on_snow.jpg"
                     }

@@ -8029,11 +8029,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/KinoProject.csproj",
+      "projectUniqueName": "/Users/sebastianmoskal/Desktop/123/mvcLabCinemaApp/KinoProject.csproj",
       "projectName": "KinoProject",
-      "projectPath": "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/KinoProject.csproj",
+      "projectPath": "/Users/sebastianmoskal/Desktop/123/mvcLabCinemaApp/KinoProject.csproj",
       "packagesPath": "/Users/sebastianmoskal/.nuget/packages/",
-      "outputPath": "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/obj/",
+      "outputPath": "/Users/sebastianmoskal/Desktop/123/mvcLabCinemaApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sebastianmoskal/.nuget/NuGet/NuGet.Config"
@@ -8120,7 +8120,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.Identity.Core 2.2.3” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net6.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.Core",
       "targetGraphs": [
         "net6.0"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cVanZ1CIYRTZXP6eg0MwKeIbi+IRJtVUo+a5JamSlRiKOqfoBa+GJd3Dq6DwkRV0lV5AN8s9VewGA1XrnT1sYw==",
+  "dgSpecHash": "n2DV65MylU5fDM7jrNNRuBe4k961iuIIxWW6RWp5OdmkkwC3d0eMHDiAeBw64aFXqffLSFxw7z86zmZV3DDxdQ==",
   "success": true,
-  "projectFilePath": "/Users/sebastianmoskal/Desktop/dsad/mvcLabCinemaApp/KinoProject.csproj",
+  "projectFilePath": "/Users/sebastianmoskal/Desktop/123/mvcLabCinemaApp/KinoProject.csproj",
   "expectedPackageFiles": [
     "/Users/sebastianmoskal/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/Users/sebastianmoskal/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
@@ -151,7 +151,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Pakiet „Microsoft.AspNet.Identity.Core 2.2.3” został przywrócony przy użyciu elementu „.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8” zamiast platformy docelowej projektu „net6.0”. Ten pakiet może nie być w pełni kompatybilny z Twoim projektem.",
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.Core",
       "targetGraphs": [
         "net6.0"
